@@ -1,6 +1,6 @@
 # StoryWall
 
-StoryWall is a completely web based blog management system that anyone can use to create instant virtual blogs. C
+StoryWall is a completely web based blog management system that anyone can use to create instant virtual blogs.
 
 ### Development Environment Setup Instructions
 
