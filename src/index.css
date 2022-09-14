@@ -37,9 +37,19 @@
   color: aqua;
 }
 .content {
-  max-width: 600px;
+  max-width: 900px;
   margin: 40px auto;
   padding: 20px;
+}
+.designs { 
+  width: 250px;
+  height: inherit;
+  position: relative;
+  background-image: url(https://uploads-ssl.webflow.com/6283bb8d1fab6d4f7492e482/628802adfef780f502a07431_GHW-2023-web-decoration_blue-18.png);
+  background-position: center;
+  background-position: 100% 100%, 100% 100%;
+  background-size: auto 80px, auto 80px;
+  background-repeat: repeat;
 }
 
 /* blog previews / list */
