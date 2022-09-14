@@ -10,7 +10,7 @@ const Navbar = () => {
           to='/create'
           style={{
             color: "white",
-            backgroundColor: "#f1356d",
+            backgroundColor: "#FD1C03 ",
             borderRadius: "8px",
           }}
         >

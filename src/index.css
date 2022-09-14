@@ -7,20 +7,21 @@
   font-family: "Quicksand";
   color: rgb(252, 252, 252);
   font-weight: bold;
-  background-color: rgb(0, 0, 55);
+  background-color: #1c214d;
 }
+
 .navbar {
   padding: 20px;
   display: flex;
   align-items: center;
   margin: 50px;
-  border-bottom: 1px solid #ffff01;
+  border-bottom: 2px solid #ffff01;
 }
 .navbar h1 {
   font-size: x-large;
   font-family: "Quicksand";
   font-weight: bolder;
-  color: #59d7fa;
+  color: aqua;
   letter-spacing: 1rem;
 }
 .navbar .links {
@@ -32,7 +33,7 @@
   padding: 6px;
 }
 .navbar a:hover {
-  color: #59d7fa;
+  color: aqua;
 }
 .content {
   max-width: 600px;
@@ -44,14 +45,14 @@
 .blog-preview {
   padding: 10px 16px;
   margin: 20px 0;
-  border-bottom: 1px solid #e400b2;
+  border-bottom: 2px solid #F535AA ;
 }
 .blog-preview:hover {
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
 }
 .blog-preview h2 {
   font-size: 20px;
-  color: #59d7fa;
+  color: aqua;
   margin-bottom: 8px;
 }
 .blog-preview a {
@@ -61,14 +62,14 @@
 /* blog details page */
 .blog-details h2 {
   font-size: 20px;
-  color: #59d7fa;
+  color: aqua;
   margin-bottom: 10px;
 }
 .blog-details div {
   margin: 20px 0;
 }
 .blog-details button {
-  background: #fc467c;
+  background: #FD1C03 ;
   color: #fff;
   border: 0;
   padding: 8px;
@@ -88,7 +89,7 @@
 }
 .create h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: #FD1C03 ;
   margin-bottom: 30px;
 }
 .create input,
@@ -102,7 +103,7 @@
   display: block;
 }
 .create button {
-  background: #f1356d;
+  background: #FD1C03 ;
   color: #fff;
   border: 0;
   padding: 8px;
