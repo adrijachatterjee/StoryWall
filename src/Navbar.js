@@ -9,9 +9,9 @@ const Navbar = () => {
         <Link
           to='/create'
           style={{
-            color: "white",
-            backgroundColor: "#FD1C03 ",
-            borderRadius: "8px",
+            color: "black",
+            backgroundColor: "#00ffff ",
+            boxShadow: "4px 4px 0 0 #fffbf5",
           }}
         >
           New Blog
