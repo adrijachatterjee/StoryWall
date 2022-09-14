@@ -2,54 +2,58 @@ import { useState } from "react";
 import { useHistory } from "react-router-dom";
 
 const Create = () => {
-  const [title, setTitle] = useState('');
-  const [body, setBody] = useState('');
-  const [author, setAuthor] = useState('mario');
+  const [title, setTitle] = useState("");
+  const [body, setBody] = useState("");
+  const [author, setAuthor] = useState("adrija");
   const history = useHistory();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = e => {
     e.preventDefault();
     const blog = { title, body, author };
 
-    fetch('http://localhost:8000/blogs/', {
-      method: 'POST',
+    fetch("http://localhost:8000/blogs/", {
+      method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(blog)
+      body: JSON.stringify(blog),
     }).then(() => {
       // history.go(-1);
-      history.push('/');
-    })
-  }
+      history.push("/");
+    });
+  };
 
   return (
-    <div className="create">
+    <div className='create'>
       <h2>Add a New Blog</h2>
       <form onSubmit={handleSubmit}>
-        <label>Blog title:</label>
-        <input 
-          type="text" 
-          required 
+        <label>
+          <h4>Blog title:</h4>
+        </label>
+        <input
+          type='text'
+          required
           value={title}
-          onChange={(e) => setTitle(e.target.value)}
+          onChange={e => setTitle(e.target.value)}
         />
-        <label>Blog body:</label>
+        <label>
+          <h4>Blog body:</h4>
+        </label>
         <textarea
           required
           value={body}
-          onChange={(e) => setBody(e.target.value)}
+          onChange={e => setBody(e.target.value)}
         ></textarea>
-        <label>Blog author:</label>
-        <select
-          value={author}
-          onChange={(e) => setAuthor(e.target.value)}
-        >
-          <option value="mario">mario</option>
-          <option value="yoshi">yoshi</option>
+        <label>
+          <h4>Blog author:</h4>
+        </label>
+        <select value={author} onChange={e => setAuthor(e.target.value)}>
+          <option value='adrija'>adrija</option>
+          <option value='anjana'>anjana</option>
+          <option value='arunangshu'>arunangshu</option>
         </select>
         <button>Add Blog</button>
       </form>
     </div>
   );
-}
- 
+};
+
 export default Create;
